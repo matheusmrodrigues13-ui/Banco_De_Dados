@@ -31,3 +31,27 @@ CREATE TABLE CadastroCurso (
     FOREIGN KEY (id_curso) REFERENCES Curso(id_curso),
     semestre CHAR(15)
 );
+
+INSERT INTO Professor (nome, email, Formacao) VALUES
+('Carlos Silva', 'carlos@gmail.com', 'Matemática'),
+('Ana Oliveira', 'ana@gmail.com', 'Letras'),
+('Marcos Santos', 'marcos@gmail.com', 'Informática');
+
+
+INSERT INTO Alunos (nome, email, idade) VALUES
+('João Silva', 'joao@gmail.com', 17),
+('Maria Oliveira', 'maria@gmail.com', 16),
+('Pedro Almeida', 'pedro@gmail.com', 18);
+
+
+INSERT INTO Curso (Nome_Curso, id_professor) VALUES
+('Matemática', 1),
+('Português', 2),
+('Informática', 3);
+
+
+INSERT INTO CadastroCurso (id_aluno, id_curso, semestre) VALUES
+(1, 1, '1º Semestre'),
+(2, 2, '1º Semestre'),
+(3, 3, '2º Semestre'),
+(1, 3, '2º Semestre');

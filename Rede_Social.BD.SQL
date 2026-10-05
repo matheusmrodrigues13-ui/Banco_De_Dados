@@ -33,3 +33,23 @@ CREATE TABLE post_hashtag (
     id_hashtag INT NOT NULL,
     FOREIGN KEY (id_hashtag) REFERENCES hashtag(id_hashtag)
 );
+
+INSERT INTO usuario (username, inscritos, bio) VALUES
+('joaosilva', '1500', 'Apaixonado por tecnologia e inovação.'),
+('mariaoliveira', '2300', 'Fotógrafa e viajante. Compartilhando momentos incríveis.'),
+('pedroalmeida', '1200', 'Entusiasta de esportes e vida saudável.');
+
+INSERT INTO post (titulo, descricao, id_usuario) VALUES
+('Explorando o Mundo da IA', 'Compartilhando insights sobre inteligência artificial e suas aplicações.', 1),
+('Dicas de Fotografia', 'Aprenda técnicas para capturar momentos incríveis com sua câmera.', 2),
+('Treino Funcional em Casa', 'Rotina de exercícios para manter a forma sem sair de casa.', 3);
+
+INSERT INTO hashtag (nome, tema, descricao) VALUES
+('#tecnologia', 'Inovação', 'Discussões e novidades sobre tecnologia e inovação.'),
+('#fotografia', 'Arte', 'Dicas, técnicas e inspirações para fotógrafos.'),
+('#fitness', 'Saúde', 'Conteúdos relacionados a exercícios físicos e vida saudável.');
+
+INSERT INTO post_hashtag (id_post, id_hashtag) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
