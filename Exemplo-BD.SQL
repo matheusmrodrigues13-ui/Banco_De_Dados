@@ -8,3 +8,8 @@ email varchar(100),
 telefone varchar(100),
 data_cadastro date
 );
+alter table clientes ADD cpf VARCHAR(14);
+ALTER TABLE clientes MODIFY telefone VARCHAR(20);
+ALTER table clientes RENAME TO consumidores;
+DROP table consumidores;
+DROP database loja_virtual;
