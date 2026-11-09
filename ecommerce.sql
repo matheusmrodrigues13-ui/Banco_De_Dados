@@ -1,9 +1,9 @@
-SELECT nome, cidade, estado
+2we3dxSELECT nome, cidade, estado
 FROM clientes
 WHERE estado = 'SP'
 ORDER by nome
 
-SELECT DISTINCT cidade 
+SELECT DISTINCT cidade
 FROM clientes;
 
 select * from produtos where preco <= 100
